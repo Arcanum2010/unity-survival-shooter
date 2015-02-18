@@ -31,6 +31,7 @@ GameObject:
   - 82: {fileID: 8274880}
   - 195: {fileID: 19574880}
   - 114: {fileID: 11474880}
+  - 114: {fileID: 11477336}
   m_Layer: 0
   m_Name: hellephant
   m_TagString: Untagged
@@ -162,6 +163,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e46adb79861deff4dab4acf24a5300ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11477336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 174880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527aa1455d0d9514d9b80ba6ec1b66e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackInterval: .330000013
+  attackPower: 20
 --- !u!135 &13574880
 SphereCollider:
   m_ObjectHideFlags: 1
