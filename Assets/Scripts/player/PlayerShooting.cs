@@ -31,7 +31,7 @@ public class PlayerShooting : MonoBehaviour {
 	private void Update() {
 		timer += Time.deltaTime;
 
-		if (Input.GetButton("Fire1") && timer >= attackInterval)
+		if (Input.GetButton("Fire1") && timer >= attackInterval && Time.timeScale != 0)
 			Shoot();
 
 		if (timer >= attackInterval * effectDisplayTime)
