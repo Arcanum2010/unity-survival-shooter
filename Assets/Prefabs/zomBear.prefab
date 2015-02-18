@@ -16,7 +16,8 @@ GameObject:
   - 195: {fileID: 19519174}
   - 114: {fileID: 11419174}
   - 114: {fileID: 11473564}
-  m_Layer: 0
+  - 114: {fileID: 11493892}
+  m_Layer: 9
   m_Name: zomBear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,7 +33,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 419176}
   - 137: {fileID: 13719174}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Zombear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -206,6 +207,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackInterval: .5
   attackPower: 10
+--- !u!114 &11493892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 586cea957ed26ad49b672f028e2cecdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: c0119cc0b6372ed4382571bcb03c9ace, type: 3}
 --- !u!135 &13519174
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -9,12 +9,14 @@ public class EnemyAttack : MonoBehaviour {
 	private Animator anim;
 	private GameObject player;
 	private PlayerHealth playerHealth;
+	private EnemyHealth enemyHealth;
 	private bool playerInRange;
 	private float timer;
 
 	private void Awake() {
 		player = GameObject.FindGameObjectWithTag("Player");
 		playerHealth = player.GetComponent<PlayerHealth>();
+		enemyHealth = GetComponent<EnemyHealth>();
 		anim = GetComponent<Animator>();
 	}
 
@@ -31,7 +33,7 @@ public class EnemyAttack : MonoBehaviour {
 	private void Update() {
 		timer += Time.deltaTime;
 
-		if(timer >= attackInterval && playerInRange)
+		if(timer >= attackInterval && playerInRange && enemyHealth.currentHealth > 0)
 			Attack();
 
 		if (playerHealth.currentHealth <= 0)
